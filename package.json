@@ -1,0 +1,16 @@
+{
+  "name": "microservices_with_nodejs",
+  "version": "1.0.0",
+  "description": "This is first project in microservice for beginners. Use to Molecular JS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moleculer": "^0.14.33"
+  }
+}
