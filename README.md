@@ -24,7 +24,7 @@ These instructions will help you set up and run the microservice on your local m
 1. Clone the repository
 
    ```sh
-   https://github.com/your-username/moleculer-microservice.git](https://github.com/codeIndrajith/Microservices_with_NodeJS.git
+   https://github.com/codeIndrajith/Microservices_with_NodeJS.git
    cd your_project_folder
    ```
 
