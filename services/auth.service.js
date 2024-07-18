@@ -1,22 +1,23 @@
 import { ServiceBroker } from 'moleculer';
 const broker = new ServiceBroker();
 
-const generateId = () => {
-  return Math.floor(Math.random() * 1000) + 1;
-};
-const users = [];
-
 broker.createService({
-  name: 'user',
+  name: 'auth',
   actions: {
-    async createUser(ctx) {
-      const { userName, email } = ctx.params;
-      const newUser = { id: generateId(), userName, email };
-      users.push(newUser);
-      return newUser;
-    },
-    async getUsers(ctx) {
-      return users;
+    async authUser(ctx) {
+      const { userName, password } = ctx.params;
+
+      if (userName === 'admin' && password === 'password') {
+        return {
+          success: true,
+          message: 'Auth was successful',
+        };
+      } else {
+        return {
+          success: false,
+          message: 'Auth fail',
+        };
+      }
     },
   },
 });
